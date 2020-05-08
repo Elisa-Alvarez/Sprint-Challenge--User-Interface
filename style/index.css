@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -65,7 +65,38 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+/* Header*/
+header{
+    display: flex;
+    width: 55%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    justify-content:center ;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 20%;
+    margin-right: 0;
+    }
+.logo{
+    margin-left: 3%;
+    padding-left: 5%;
+    justify-self: left;
+}
+.main-nav{
+    width: 95%;
+    /*TRBL*/
+    padding:1rem 0 0 0rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-nav a{
+    margin-left: 3em;
+    text-decoration:none;
+    color: black;
+}
 
+/*Main Content*/
 .container {
     width: 800px;
     margin: 0 auto;
@@ -77,6 +108,9 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+.top-content img {
+    margin-bottom: 1rem;
 }
 
 .top-content .text-container {
@@ -104,14 +138,43 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+/*Box Colors*/
+    #box1{ 
+        background-color:teal;
+    }
+    #box2{
+        background: gold;
+    } 
+    #box3{
+        background:cadetblue;
+    }
+    #box4{
+        background:  coral;
+    }
+    #box5{
+        background:  crimson;
+    }
+    #box6{
+        background: forestgreen;
+    }
+    #box7{
+        background:darkorchid;
+    }
+    #box8{
+        background: hotpink;
+    }
+    #box9{
+        background:  indigo;
+    }
+    #box10{
+        background:dodgerblue;
+    }
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +206,120 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*Media Queries*/
+
+@media (max-width:800px){
+    header{
+        display: flex;
+        width: 95%;
+        justify-content:center ;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        }
+    .logo{
+        margin-left: 0;
+        padding-left: 0;
+        justify-self: left;
+    }
+    .main-nav{
+        width: 95%;
+        /*TRBL*/
+        padding:1rem 0 0 0rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .main-nav a{
+        margin-left: 3em;
+        text-decoration:none;
+        color: black;
+    }
+
+    .top-content {
+        width: 85%;
+    
+    }
+    section.middle-content{
+        width: 86%;
+    }
+    .middle-content .boxes .box {
+        width: 30.5%;
+        height: 10.5rem;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width:500px){
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        justify-content:center ;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        }
+        
+    .logo{
+        margin: 1% auto !% auto;
+        padding-left: 0;
+        justify-self: left;
+    }
+    .main-nav{
+        width: 95%;
+        /*TRBL*/
+        padding:1rem 0 0 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+    }
+    .main-nav a{
+        margin-left:0;
+        margin-top: 1rem;
+        text-decoration:none;
+        color: black;
+    }
+  
+    .top-content {
+        width: 56%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        
+    }
+    .top-content .text-container{
+        justify-self: left;
+    }
+    
+    section.middle-content{
+        width: 56%;
+    }
+    .middle-content .boxes .box {
+        width: 15.5%;
+        height: 4rem;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .bottom-content {
+        width: 56%;
+        display: flex;
+        margin: 0 2% 20px;
+        justify-content: space-around;
+    }
+
 }
