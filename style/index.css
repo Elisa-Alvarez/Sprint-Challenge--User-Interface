@@ -68,19 +68,16 @@ p {
 /* Header*/
 header{
     display: flex;
-    width: 55%;
-    padding-left: 1.5rem;
-    padding-bottom: 1%;
+    width: 100%;
     justify-content:center ;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 1%;
-    margin-left: 20%;
     margin-right: 0;
+    margin-bottom: 2%;
     }
 .logo{
-    margin-left: 3%;
-    padding-left: 5%;
+
     justify-self: left;
 }
 .main-nav{
@@ -211,18 +208,22 @@ footer nav a {
 /*Media Queries*/
 
 @media (max-width:800px){
+   .container{
+       width:99%;
+   }
     header{
         display: flex;
-        width: 95%;
+        width: 100%;
         justify-content:center ;
         justify-content: space-evenly;
         align-items: center;
-        margin: 0;
+        margin: 1%;
         padding: 0;
         }
-    .logo{
-        margin-left: 0;
-        padding-left: 0;
+   
+     header   img.logo{
+        width: 30%;
+        height: 30%;
         justify-self: left;
     }
     .main-nav{
@@ -236,6 +237,9 @@ footer nav a {
         margin-left: 3em;
         text-decoration:none;
         color: black;
+    }
+    .container img{
+        width: 100%;
     }
 
     .top-content {
